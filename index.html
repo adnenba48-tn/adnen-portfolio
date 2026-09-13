@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Meta Tags -->
+  <title>Adnen Ben Abdallah — Computer Engineering & IoT</title>
+  <meta name="description" content="Portfolio of Adnen Ben Abdallah — Computer Engineering, IoT, Web Development, Design and Multimedia." />
+  <meta name="keywords" content="Adnen Ben Abdallah, Computer Engineering, IoT, Embedded Systems, STM32, Arduino, Web Developer, Graphic Designer, Sound Technician, The Code Bey, ISIMA" />
+  <meta name="author" content="Adnen Ben Abdallah" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Adnen Ben Abdallah — Portfolio" />
+  <meta property="og:description" content="Computer Engineering & IoT Student • Creative Developer • Designer • Multimedia" />
+  <meta property="og:type" content="website" />
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="header" id="main-header">
+    <div class="header-inner">
+      <a href="#home" class="logo">
+        ADNEN<span class="logo-dot"></span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link active" data-i18n="nav_home">Home</a>
+        <a href="#about" class="nav-link" data-i18n="nav_about">About</a>
+        <a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a>
+        <a href="#projects" class="nav-link" data-i18n="nav_projects">Projects</a>
+        <a href="#experience" class="nav-link" data-i18n="nav_experience">Experience</a>
+        <a href="#creativity" class="nav-link" data-i18n="nav_creativity">Tech × Creativity</a>
+        <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="header-controls">
+        <!-- Language Switcher -->
+        <button class="control-btn active" id="btn-lang-en">EN</button>
+        <button class="control-btn" id="btn-lang-fr">FR</button>
+        
+        <!-- Theme Toggle -->
+        <button class="control-btn" id="btn-theme-toggle" aria-label="Toggle Theme">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Open Navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#home" class="nav-link" data-i18n="nav_home">Home</a>
+    <a href="#about" class="nav-link" data-i18n="nav_about">About</a>
+    <a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a>
+    <a href="#projects" class="nav-link" data-i18n="nav_projects">Projects</a>
+    <a href="#experience" class="nav-link" data-i18n="nav_experience">Experience</a>
+    <a href="#creativity" class="nav-link" data-i18n="nav_creativity">Tech × Creativity</a>
+    <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+  </div>
+
+  <!-- ==========================================================================
+       2. HERO SECTION (kao.mp4 Video Background)
+       ========================================================================== -->
+  <section class="hero" id="home">
+    <div class="hero-video-wrap">
+      <video id="hero-video-player" class="hero-video" autoplay muted loop playsinline preload="auto">
+        <source src="25.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="eyebrow-badge" data-i18n="eyebrow">ADNEN BEN ABDALLAH</div>
+      <h1 class="hero-title" data-i18n="hero_headline">BUILD.<br/>CREATE.<br/>IMPACT.</h1>
+      <p class="hero-subtitle" data-i18n="hero_subtitle">
+        Computer Engineering & IoT Student • Creative Developer • Designer • Multimedia
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">
+          <span data-i18n="btn_explore">Explore My Work</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <button class="btn btn-secondary" id="btn-download-cv">
+          <span data-i18n="btn_cv">Download CV</span>
+          <i class="fas fa-file-download"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span data-i18n="scroll_text">SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. ABOUT SECTION
+       ========================================================================== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag" data-i18n="about_tag">// EDITORIAL PROFILE</div>
+        <h2 class="section-title" data-i18n="about_title">ABOUT ME</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal-up">
+          <p data-i18n="about_p1">
+            I am a <strong>Computer Engineering & IoT student</strong> driven by technical innovation and creative expression. As <strong>President of The Code Bey – ISIMA</strong>, I lead developer initiatives, foster tech talent, and build smart embedded systems.
+          </p>
+          <p data-i18n="about_p2">
+            Combining <strong>8+ years in audio and sound engineering</strong> with modern software development and digital design, I create seamless digital and hardware experiences that connect systems, hardware, and human emotion.
+          </p>
+        </div>
+
+        <div class="stats-grid reveal-up">
+          <div class="stat-card">
+            <div class="stat-number" data-i18n="stat1_num">8+</div>
+            <div class="stat-info">
+              <h4 data-i18n="stat1_title">Years in Sound & Multimedia</h4>
+              <p data-i18n="stat1_desc">Acoustics, live mixing, signal editing & audio production</p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number" data-i18n="stat2_num">IoT</div>
+            <div class="stat-info">
+              <h4 data-i18n="stat2_title">Engineering & Embedded Focus</h4>
+              <p data-i18n="stat2_desc">Arduino, STM32, VHDL, Sensors & Smart Automation</p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number" data-i18n="stat3_num">Lead</div>
+            <div class="stat-info">
+              <h4 data-i18n="stat3_title">President — The Code Bey (ISIMA)</h4>
+              <p data-i18n="stat3_desc">Directing student developer projects & technical workshops</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. SKILLS SECTION
+       ========================================================================== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag" data-i18n="skills_tag">// TECHNICAL MATRIX</div>
+        <h2 class="section-title" data-i18n="skills_title">SKILLS & EXPERTISE</h2>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="skills-tabs reveal-up">
+        <button class="skill-tab active" data-filter="all" data-i18n="tab_all">All Skills</button>
+        <button class="skill-tab" data-filter="dev" data-i18n="tab_dev">Development</button>
+        <button class="skill-tab" data-filter="iot" data-i18n="tab_iot">IoT & Embedded</button>
+        <button class="skill-tab" data-filter="creative" data-i18n="tab_creative">Creative</button>
+        <button class="skill-tab" data-filter="tools" data-i18n="tab_tools">Tools</button>
+      </div>
+
+      <div class="skills-grid reveal-up">
+        <!-- Development Category -->
+        <div class="skill-card" data-category="dev">
+          <div>
+            <div class="skill-category-tag">DEVELOPMENT</div>
+            <h3>Web & Software Logic</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">MySQL</span>
+          </div>
+        </div>
+
+        <!-- IoT & Embedded Category -->
+        <div class="skill-card" data-category="iot">
+          <div>
+            <div class="skill-category-tag">IOT & EMBEDDED</div>
+            <h3>Hardware & Systems</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Arduino</span>
+            <span class="skill-tag">STM32</span>
+            <span class="skill-tag">Raspberry Pi</span>
+            <span class="skill-tag">LabVIEW</span>
+            <span class="skill-tag">Digital Logic</span>
+            <span class="skill-tag">VHDL</span>
+          </div>
+        </div>
+
+        <!-- Creative Category -->
+        <div class="skill-card" data-category="creative">
+          <div>
+            <div class="skill-category-tag">CREATIVE DESIGN</div>
+            <h3>Senior Graphic Design & Motion</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" style="border-color: var(--accent-red-border); background: var(--accent-red-subtle); color: var(--accent-red); font-weight: 600;">Adobe Photoshop</span>
+            <span class="skill-tag" style="border-color: var(--accent-red-border); background: var(--accent-red-subtle); color: var(--accent-red); font-weight: 600;">Adobe Illustrator</span>
+            <span class="skill-tag">Senior Graphic Design</span>
+            <span class="skill-tag">UI/UX Design</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Brand Systems</span>
+            <span class="skill-tag">Motion Graphics</span>
+            <span class="skill-tag">Audio Mixing</span>
+          </div>
+        </div>
+
+        <!-- Tools Category -->
+        <div class="skill-card" data-category="tools">
+          <div>
+            <div class="skill-category-tag">TOOLS & DEV ENV</div>
+            <h3>Workflow & Version Control</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">XAMPP</span>
+            <span class="skill-tag">Linux Shell</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. PROJECTS SHOWCASE
+       ========================================================================== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag" data-i18n="projects_tag">// CASE STUDIES</div>
+        <h2 class="section-title" data-i18n="projects_title">FEATURED PROJECTS</h2>
+        <p class="section-description" data-i18n="projects_desc">
+          Cinematic IoT engineering, web systems, and creative technology implementations.
+        </p>
+      </div>
+
+      <div class="projects-grid reveal-up">
+        <!-- Project 1: Smart Parking -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/img/smart-parking-schematic.jpg" alt="Smart Parking System" class="project-img" />
+            <span class="project-badge">IoT & Embedded</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title" data-i18n="proj1_title">Smart Parking System</h3>
+            <p class="project-desc" data-i18n="proj1_desc">
+              Intelligent IoT parking solution utilizing distance sensors, STM32 microcontroller, and real-time dashboard visualization for automated space occupancy management.
+            </p>
+            <div class="project-tech">
+              <span class="tech-pill">Arduino Uno</span>
+              <span class="tech-pill">LDR (LM393)</span>
+              <span class="tech-pill">7-Segment</span>
+              <span class="tech-pill">LED Indicators</span>
+            </div>
+            <a href="#" class="project-btn project-modal-trigger" data-project-id="smart-parking">
+              <span data-i18n="btn_view_project">View Case Study</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: Smart Greenhouse -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/img/smart-greenhouse-schematic.jpg" alt="Smart Greenhouse System" class="project-img" />
+            <span class="project-badge">IoT & Digital Logic</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title" data-i18n="proj2_title">Smart Greenhouse System</h3>
+            <p class="project-desc" data-i18n="proj2_desc">
+              Automated climate and precision irrigation monitoring network using sensor arrays, microcontrollers, and wireless data logging.
+            </p>
+            <div class="project-tech">
+              <span class="tech-pill">Arduino Uno</span>
+              <span class="tech-pill">LogicBench</span>
+              <span class="tech-pill">74HC Logic ICs</span>
+              <span class="tech-pill">DHT22 & Moisture</span>
+            </div>
+            <a href="#" class="project-btn project-modal-trigger" data-project-id="smart-greenhouse">
+              <span data-i18n="btn_view_project">View Case Study</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: Forsa Tech -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/img/forsa-tech-dashboard.jpg" alt="Forsa Tech" class="project-img" />
+            <span class="project-badge">Web Platform</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title" data-i18n="proj3_title">Forsa Tech Platform</h3>
+            <p class="project-desc" data-i18n="proj3_desc">
+              Web portal tailored for engineering students and technology enthusiasts to access innovation opportunities, workshops, and project showcases.
+            </p>
+            <div class="project-tech">
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">CSS3</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">PHP</span>
+            </div>
+            <a href="#" class="project-btn project-modal-trigger" data-project-id="forsa-tech">
+              <span data-i18n="btn_view_project">View Case Study</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: Sound & Audio Station -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/img/sound-station-live1.jpg" alt="Sound Audio Station" class="project-img" />
+            <span class="project-badge">Multimedia Tech</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title" data-i18n="proj5_title">Sound & Audio Signal Station</h3>
+            <p class="project-desc" data-i18n="proj5_desc">
+              Custom audio workstation setup and signal processing layout for live venue mixing, spatial sound enhancement, and multi-track audio production.
+            </p>
+            <div class="project-tech">
+              <span class="tech-pill">Acoustics</span>
+              <span class="tech-pill">Live Mixing</span>
+              <span class="tech-pill">DSP</span>
+              <span class="tech-pill">Audio Tech</span>
+            </div>
+            <a href="#" class="project-btn project-modal-trigger" data-project-id="sound-station">
+              <span data-i18n="btn_view_project">View Case Study</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. EXPERIENCE SECTION
+       ========================================================================== -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag" data-i18n="exp_tag">// CAREER PATH</div>
+        <h2 class="section-title" data-i18n="exp_title">EXPERIENCE</h2>
+      </div>
+
+      <div class="timeline reveal-up">
+        <!-- Experience 1 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3 class="role-title" data-i18n="role1_title">President — The Code Bey – ISIMA</h3>
+              <span class="org-name">ISIMA Student Club</span>
+            </div>
+            <p class="timeline-desc" data-i18n="role1_desc">
+              Leading the official computer science and technology club at ISIMA. Directing technical projects, hosting hands-on workshops, organizing hackathons, and managing club strategy.
+            </p>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3 class="role-title" data-i18n="role2_title">Senior Graphic Designer</h3>
+              <span class="org-name">Creative Media & Identity</span>
+            </div>
+            <p class="timeline-desc" data-i18n="role2_desc">
+              Crafting digital visual identities, modern UI/UX design components, promotional branding collateral, and motion media assets for client campaigns and club initiatives.
+            </p>
+          </div>
+        </div>
+
+        <!-- Experience 3 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3 class="role-title" data-i18n="role3_title">Sound / Audio Technician</h3>
+              <span class="org-name">8+ Years Live & Studio Audio</span>
+            </div>
+            <p class="timeline-desc" data-i18n="role3_desc">
+              8+ years managing audio engineering, acoustics configuration, live sound reinforcement, signal processing, and post-production mixing for major events and venue setups.
+            </p>
+          </div>
+        </div>
+
+        <!-- Experience 4 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3 class="role-title" data-i18n="role4_title">DevOps Club Designer</h3>
+              <span class="org-name">DevOps Community</span>
+            </div>
+            <p class="timeline-desc" data-i18n="role4_desc">
+              Designing developer-focused visual branding assets, UI elements, technical infographs, and event media for DevOps community events.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. TECH × CREATIVITY SECTION
+       ========================================================================== -->
+  <section id="creativity">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag" data-i18n="creative_tag">// SYNERGY</div>
+        <h2 class="section-title" data-i18n="creative_title">TECH × CREATIVITY</h2>
+        <p class="section-description" data-i18n="creative_desc">
+          Visualizing the fusion of computer engineering, digital art, audio production, and visual branding.
+        </p>
+      </div>
+
+      <div class="gallery-grid reveal-up">
+        <div class="gallery-item">
+          <img src="assets/img/forsa-tech-dashboard.jpg" alt="Web Platform UI Design" class="gallery-img" />
+          <div class="gallery-overlay">
+            <span class="gallery-category">Web Platform & UI/UX</span>
+            <h4 class="gallery-title">Forsa Tech Recruitment Platform</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/img/sound-station-live1.jpg" alt="Sound Engineering" class="gallery-img" />
+          <div class="gallery-overlay">
+            <span class="gallery-category">Sound & Audio Tech</span>
+            <h4 class="gallery-title">Live Audio Mixing & Sound Engineering</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/img/smart-parking-schematic.jpg" alt="Hardware Architecture" class="gallery-img" />
+          <div class="gallery-overlay">
+            <span class="gallery-category">IoT & Embedded Systems</span>
+            <h4 class="gallery-title">Smart Parking LDR Hardware Schematic</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/img/smart-greenhouse-schematic.jpg" alt="Digital Logic Engineering" class="gallery-img" />
+          <div class="gallery-overlay">
+            <span class="gallery-category">Digital Logic & Automation</span>
+            <h4 class="gallery-title">Smart Greenhouse LogicBench Design</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. CONTACT SECTION
+       ========================================================================== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag" data-i18n="contact_tag">// GET IN TOUCH</div>
+        <h2 class="section-title" data-i18n="contact_title">LET'S BUILD SOMETHING.</h2>
+        <p class="section-description" data-i18n="contact_desc">
+          Whether you have a technical IoT project, web engineering inquiry, or creative multimedia collaboration, feel free to reach out.
+        </p>
+      </div>
+
+      <div class="contact-grid reveal-up">
+        <!-- Direct Contact Cards -->
+        <div class="contact-info-card">
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+            <div class="info-text">
+              <h5>Email</h5>
+              <a href="mailto:adnen.benabdallah@isima.tn">adnen.benabdallah@isima.tn</a>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div class="info-text">
+              <h5>LinkedIn</h5>
+              <a href="https://linkedin.com" target="_blank" rel="noopener">Adnen Ben Abdallah</a>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fab fa-github"></i></div>
+            <div class="info-text">
+              <h5>GitHub</h5>
+              <a href="https://github.com" target="_blank" rel="noopener">Adnen Ben Abdallah</a>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-location-dot"></i></div>
+            <div class="info-text">
+              <h5>Location</h5>
+              <p>Monastir / Mahdia, Tunisia</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="form-name" data-i18n="label_name">Your Name</label>
+            <input type="text" id="form-name" class="form-control" placeholder="e.g. Alex Morgan" required data-i18n="placeholder_name" />
+          </div>
+
+          <div class="form-group">
+            <label for="form-email" data-i18n="label_email">Email Address</label>
+            <input type="email" id="form-email" class="form-control" placeholder="alex@example.com" required data-i18n="placeholder_email" />
+          </div>
+
+          <div class="form-group">
+            <label for="form-subject" data-i18n="label_subject">Subject</label>
+            <input type="text" id="form-subject" class="form-control" placeholder="Project Collaboration / Inquiry" required data-i18n="placeholder_subject" />
+          </div>
+
+          <div class="form-group">
+            <label for="form-message" data-i18n="label_message">Message</label>
+            <textarea id="form-message" class="form-control" placeholder="Tell me about your project or idea..." required data-i18n="placeholder_message"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+            <span data-i18n="btn_send">Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+
+          <div class="toast-msg" id="contact-toast" data-i18n="toast_success">
+            Thank you! Your message has been sent successfully.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. MODALS (Case Study & CV)
+       ========================================================================== -->
+  <!-- Case Study Modal -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-container">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close Modal">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <span class="skill-category-tag" id="modal-category">CATEGORY</span>
+      <h2 class="section-title" id="modal-title" style="margin-bottom: 1rem;">Project Title</h2>
+      <p id="modal-description" style="color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.7;">
+        Description text goes here...
+      </p>
+
+      <h4 style="font-size: 0.9rem; font-family: var(--font-mono); color: var(--accent-red); margin-bottom: 0.75rem; text-transform: uppercase;">
+        TECHNOLOGIES USED
+      </h4>
+      <div id="modal-tech" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.75rem;">
+        <!-- Filled by JS -->
+      </div>
+
+      <h4 style="font-size: 0.9rem; font-family: var(--font-mono); color: var(--accent-red); margin-bottom: 0.75rem; text-transform: uppercase;">
+        KEY IMPLEMENTATION HIGHLIGHTS
+      </h4>
+      <ul id="modal-details" style="display: flex; flex-direction: column; gap: 0.6rem; color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.75rem;">
+        <!-- Filled by JS -->
+      </ul>
+
+      <div id="modal-gallery-container">
+        <!-- Photo gallery populated dynamically by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- CV Download Modal -->
+  <div class="modal-overlay" id="cv-modal">
+    <div class="modal-container">
+      <button class="modal-close" id="cv-modal-close" aria-label="Close Modal">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <span class="skill-category-tag">CURRICULUM VITAE</span>
+      <h2 class="section-title" style="margin-bottom: 1rem;">ADNEN BEN ABDALLAH</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+        Computer Engineering / IoT Student • President of The Code Bey – ISIMA • Creative Designer & Multimedia Sound Technician
+      </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; margin-bottom: 2rem;">
+        <div style="background: var(--bg-card); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+          <h4 style="color: var(--accent-red); font-size: 0.85rem; font-family: var(--font-mono); margin-bottom: 0.4rem;">EDUCATION</h4>
+          <p style="font-size: 0.9rem; font-weight: 600;">Computer Engineering / IoT</p>
+          <p style="font-size: 0.8rem; color: var(--text-secondary);">ISIMA (Higher Institute of Computer Science and Mathematics of Monastir)</p>
+        </div>
+
+        <div style="background: var(--bg-card); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+          <h4 style="color: var(--accent-red); font-size: 0.85rem; font-family: var(--font-mono); margin-bottom: 0.4rem;">LEADERSHIP</h4>
+          <p style="font-size: 0.9rem; font-weight: 600;">President — The Code Bey</p>
+          <p style="font-size: 0.8rem; color: var(--text-secondary);">Leading student developer workshops, hackathons & tech events</p>
+        </div>
+
+        <div style="background: var(--bg-card); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+          <h4 style="color: var(--accent-red); font-size: 0.85rem; font-family: var(--font-mono); margin-bottom: 0.4rem;">CREATIVE TECH</h4>
+          <p style="font-size: 0.9rem; font-weight: 600;">8+ Years Sound & Design</p>
+          <p style="font-size: 0.8rem; color: var(--text-secondary);">Audio engineering, digital UI design & multimedia branding</p>
+        </div>
+      </div>
+
+      <a href="#contact" class="btn btn-primary" onclick="document.getElementById('cv-modal').classList.remove('active'); document.body.style.overflow='';" style="justify-content: center; width: 100%;">
+        <span>Contact for Full Resume Dossier</span>
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       10. FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo" style="margin-bottom: 0.4rem; display: inline-flex;">
+          ADNEN<span class="logo-dot"></span>
+        </a>
+        <p data-i18n="footer_tagline">Computer Engineering • IoT • Creative Technology</p>
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:adnen.benabdallah@isima.tn" class="social-icon" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+      <div style="font-size: 0.8rem; color: var(--text-muted);">
+        &copy; 2026 ADNEN BEN ABDALLAH. <span data-i18n="rights">All Rights Reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/theme.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
